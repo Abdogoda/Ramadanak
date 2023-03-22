@@ -12,7 +12,7 @@ document.querySelector(".overall button").addEventListener("click", () => {
  document.body.innerHTML += `<div class="preloader"><lottie-player
    src="https://assets1.lottiefiles.com/private_files/lf30_013r2q.json"
    background="transparent"
-   speed="1.2"
+   speed="1.5"
    autoplay
   ></lottie-player></div>`;
  setTimeout(() => {
@@ -23,7 +23,7 @@ document.querySelector(".overall button").addEventListener("click", () => {
  }, 3500);
  setTimeout(() => {
   getData();
- }, 1500);
+ }, 1000);
 });
 
 //start
