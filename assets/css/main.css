@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Gulzar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap");
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ list-style: none;
+ text-decoration: none;
+ border: none;
+ outline: none;
+}
+html::-webkit-scrollbar {
+ width: 0;
+}
+img {
+ object-fit: cover;
+ max-width: 100%;
+}
+body {
+ overflow-x: hidden !important;
+ background: rgb(10, 0, 36);
+ background: linear-gradient(90deg, #300f1a 0%, #901f4d 48%, #280f15 100%);
+ min-height: 100vh;
+ color: #fff;
+ font-size: 20px;
+ font-family: "Gulzar", serif;
+}
+.overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index: 0;
+ background: url(../img/sticker/s2.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ opacity: 0.05;
+ height: 100%;
+}
+section {
+ margin: 5rem 0;
+}
+.container {
+ position: relative;
+ width: 80%;
+ max-width: 95%;
+ margin: 0 auto;
+}
+.header {
+ user-select: none;
+ width: 100%;
+ border-top-right-radius: 1rem;
+ border-top-left-radius: 1rem;
+ height: 100px;
+ padding: 0 3rem;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.header .logo {
+ font-size: 25px;
+}
+.header ul {
+ display: flex;
+ justify-content: center;
+ gap: 1.4rem;
+}
+.header ul a {
+ color: #fff;
+ transition: 0.2s ease-in-out;
+ position: relative;
+}
+.header ul li.active a,
+.header ul li:hover a {
+ mix-blend-mode: screen;
+ text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #fff !important;
+}
+.header .nav-toggler {
+ display: none;
+}
+.header .nav-toggler {
+ color: #fff;
+ transition: 0.2s;
+ cursor: pointer;
+ font-size: 25px;
+}
+.header .nav-toggler:hover,
+.header .nav-toggler.active {
+ mix-blend-mode: screen;
+ text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #fff;
+}
+@media (max-width: 778px) {
+ .container {
+  width: 90%;
+ }
+ .header {
+  padding: 0 1.5rem;
+ }
+ .header ul {
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+  top: 80px;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  z-index: 100000;
+  transition: 0.5s ease-in-out;
+  transform: translateY(-200%);
+  transform-origin: left;
+ }
+ .header ul.active {
+  transform: translateY(0);
+ }
+ .header ul li {
+  z-index: 100000;
+  width: 100%;
+  background-color: #901f4d;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+ }
+ .header ul li a {
+  color: #fff;
+  user-select: none;
+ }
+ .header ul li:hover,
+ .header ul li.active {
+  background-color: #5a132b;
+ }
+ .header ul li:hover a,
+ .header ul li.active a {
+  text-shadow: 0 0 5px #901f4d, 0 0 7px #901f4d, 0 0 10px #901f4d !important;
+ }
+ .header .nav-toggler {
+  display: block !important;
+ }
+}
+@media (max-width: 500px) {
+ html {
+  font-size: 85%;
+ }
+
+ .container {
+  width: 95%;
+ }
+}
+
+/* preloader */
+.preloader {
+ position: fixed;
+ height: 100%;
+ z-index: 1000;
+ top: 0;
+ left: 0;
+ background: linear-gradient(90deg, #300f1a 0%, #901f4d 48%, #280f15 100%);
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.preloader::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 1;
+ background: url(../img/sticker/s2.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ opacity: 0.05;
+}
+@keyframes fadeOut {
+ to {
+  opacity: 0;
+  visibility: hidden;
+ }
+}

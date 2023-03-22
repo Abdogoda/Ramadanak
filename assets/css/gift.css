@@ -1,0 +1,85 @@
+.gift-container {
+ width: 700px;
+ max-width: 100%;
+ margin: auto;
+ box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+ border-radius: 15px;
+ padding: 1rem;
+ user-select: none;
+}
+.gift-container h1 {
+ text-align: center;
+ font-size: 35px;
+ color: rgb(210, 160, 28);
+}
+.gift-container .input-group {
+ width: 100%;
+ margin-bottom: 1rem;
+}
+.gift-container .input-group input {
+ width: 100%;
+ background-color: transparent;
+ border-radius: 10px;
+ border: 1px solid rgb(210, 160, 28);
+ padding: 15px 20px;
+ color: #fff;
+ font-size: 1.2rem;
+}
+.gift-container .input-group input.error::placeholder {
+ color: red;
+ transition: 0.2s ease-in-out;
+}
+.gift-container .input-group input.error:focus::placeholder {
+ opacity: 0;
+}
+.song-group .songs-box {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ gap: 1rem;
+ row-gap: 0.2rem;
+ background-color: transparent;
+ border-radius: 10px;
+ border: 1px solid rgb(210, 160, 28);
+ padding: 10px 20px;
+ color: #fff;
+}
+.song-group .songs-box div {
+ width: calc((100% - 1rem) / 2);
+ display: flex;
+ align-items: center;
+}
+@media (max-width: 550px) {
+ .song-group .songs-box div {
+  width: calc(100%);
+ }
+}
+.song-group .songs-box div input {
+ width: 20px;
+ height: 20px;
+ margin-left: 15px;
+}
+.song-group .songs-box div i {
+ color: rgb(210, 160, 28);
+ margin-left: 10px;
+}
+.song-group .songs-box div i.hide {
+ display: none;
+}
+.gift-container button {
+ padding: 10px 20px;
+ text-align: center;
+ background-color: rgb(210, 160, 28);
+ border-radius: 15px;
+ display: block;
+ border: 1px solid rgb(210, 160, 28);
+ margin: 1.5rem auto 1rem auto;
+ font-size: 1.2rem;
+ color: #fff;
+ transition: 0.2s ease-in-out;
+ font-weight: bold;
+}
+.gift-container button:hover {
+ color: rgb(210, 160, 28);
+ background-color: #fff;
+}

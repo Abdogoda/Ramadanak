@@ -1,0 +1,32 @@
+[
+ {
+  "id": 1,
+  "text": "يا نور الهلال",
+  "src": "assets/audio/songs/song1.m4a"
+ },
+ {
+  "id": 2,
+  "text": "رمضان كريم فتاح يا عليم",
+  "src": "assets/audio/songs/song2.m4a"
+ },
+ {
+  "id": 3,
+  "text": "مرحب شهر الصوم مرحب",
+  "src": "assets/audio/songs/song3.m4a"
+ },
+ {
+  "id": 4,
+  "text": "افرحو يا بنات يلا وهيصو",
+  "src": "assets/audio/songs/song4.m4a"
+ },
+ {
+  "id": 5,
+  "text": "اهو جه يا ولاد",
+  "src": "assets/audio/songs/song5.m4a"
+ },
+ {
+  "id": 6,
+  "text": "رمضان في مصر حاجه تانيه",
+  "src": "assets/audio/songs/song6.m4a"
+ }
+]

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+ <head>
+  <meta charset="UTF-8" />
+  <meta property="og:title" content="View Gift" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اهداء</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png" />
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/viewGift.css" />
+  <style>
+   body {
+    padding-top: 4rem;
+    overflow-y: hidden;
+   }
+   @media (max-width: 778px) {
+    body {
+     padding-top: 2rem;
+    }
+   }
+   @media (max-width: 500px) {
+    body {
+     padding-top: 1rem;
+    }
+   }
+  </style>
+ </head>
+ <body>
+  <div class="overlay overlay1"></div>
+  <div class="preloader">
+   <lottie-player
+    src="https://assets1.lottiefiles.com/private_files/lf30_013r2q.json"
+    background="transparent"
+    speed="1.2"
+    autoplay
+   ></lottie-player>
+  </div>
+  <div class="over over2"><img src="assets/img/sticker/s7.png" alt="" /></div>
+  <div class="over over3"><img src="assets/img/sticker/s7.png" alt="" /></div>
+  <div class="container hero">
+   <div class="over over1"><img src="assets/img/sticker/s3.png" alt="" /></div>
+   <div class="content">
+    <div class="text">
+     <h1 class="name"></h1>
+     <div class="default-message">رمضانك كريم</div>
+     <div class="buttons">
+      <button class="share">
+       مشاركه عبر واتساب <i class="fab fa-whatsapp"></i>
+      </button>
+      <a href="gift.html" class="gift">
+       ارسال اهداء <i class="fa fa-gift"></i>
+      </a>
+      <a href="index.html" class="home">
+       موقع رمضانك <i class="fa fa-home"></i>
+      </a>
+     </div>
+    </div>
+    <div class="img">
+     <img src="assets/img/sticker/s1.png" alt="" /><lottie-player
+      src="https://assets4.lottiefiles.com/packages/lf20_xzrruwod.json"
+      background="transparent"
+      speed="1.2"
+      loop
+      autoplay
+      class="over img-over"
+     ></lottie-player>
+    </div>
+   </div>
+  </div>
+  <script>
+   // preload
+   setTimeout(() => {
+    document.querySelector(".preloader").style.animation = "fadeOut 0.5s ease";
+   }, 4000);
+   setTimeout(() => {
+    document
+     .querySelector(".preloader")
+     .parentNode.removeChild(document.querySelector(".preloader"));
+   }, 4500);
+  </script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="assets/js/viewGift.js"></script>
+ </body>
+</html>

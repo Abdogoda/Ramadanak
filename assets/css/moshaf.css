@@ -1,0 +1,140 @@
+.moshaf-container {
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+ border-radius: 15px;
+}
+.moshaf-container .select-soura {
+ padding: 1rem;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+ text-align: center;
+}
+.moshaf-container .select-soura .soura span,
+.moshaf-container .select-soura .soura p {
+ position: relative;
+ display: inline-block;
+ margin: 0 0 0 25px;
+ color: rgb(210, 160, 28);
+}
+.moshaf-container .select-soura .soura span::after {
+ content: "";
+ position: absolute;
+ width: 20px;
+ height: 2px;
+ background-color: rgb(210, 160, 28);
+ top: 50%;
+ left: -22px;
+ transform: translateY(-50%);
+}
+.moshaf-container .select-soura .select-soura-box {
+ background-color: transparent;
+ color: #fff;
+ width: 250px;
+ max-width: 100%;
+ border: 1px solid rgb(210, 160, 28);
+ padding: 10px 20px;
+ font-size: 20px;
+ border-radius: 15px;
+ cursor: pointer;
+ user-select: none;
+}
+.moshaf-container .select-soura .select-soura-box option {
+ color: #333;
+}
+.moshaf-container .select-soura .bookmark-btn {
+ position: relative;
+ background-color: #fff;
+ color: #fff;
+ z-index: 100;
+ z-index: 100;
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ cursor: pointer;
+ transition: 0.2s ease-in-out;
+}
+.moshaf-container .select-soura .bookmark-btn i {
+ position: absolute;
+ color: rgb(210, 160, 28);
+ font-size: 35px;
+ z-index: -1;
+ transition: 0.2s ease-in-out;
+}
+.moshaf-container .select-soura .bookmark-btn:hover {
+ background-color: rgb(210, 160, 28);
+ color: rgb(210, 160, 28);
+}
+.moshaf-container .select-soura .bookmark-btn:hover i {
+ color: #fff;
+}
+.moshaf-container .next-soura {
+ display: block;
+ text-align: left;
+ margin-left: 1rem;
+}
+.moshaf-container .next-soura button {
+ background-color: #fff;
+ color: rgb(210, 160, 28);
+ padding: 10px 20px;
+ border-radius: 15px;
+ cursor: pointer;
+ user-select: none;
+ transition: 0.2s ease-in-out;
+ font-size: 18px;
+}
+.moshaf-container .next-soura button:hover {
+ background-color: rgb(210, 160, 28);
+ color: #fff;
+}
+.moshaf-container .soura-text {
+ margin: 1.5rem 0;
+ padding: 0 1rem;
+ width: 100%;
+ cursor: default;
+}
+.moshaf-container .soura-text .first {
+ text-align: center;
+ font-size: 35px;
+ font-weight: bold;
+}
+.moshaf-container .soura-wrapper .ayya-text {
+ box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+ position: relative;
+ background-color: #fff;
+ color: #222;
+ border-radius: 15px;
+ margin-bottom: 1.5rem;
+ padding: 10px 25px;
+ padding-left: 35px;
+ font-size: 1.5rem;
+ font-weight: bold;
+ font-family: "El Messiri", sans-serif;
+}
+.moshaf-container .soura-wrapper .ayya-text span {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: absolute;
+ width: 40px;
+ height: 40px;
+ bottom: 5px;
+ left: 5px;
+ color: #fff;
+ background-color: rgb(210, 160, 28);
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+ border-radius: 50%;
+}
+.moshaf-container .soura-wrapper .ayya-text i {
+ position: absolute;
+ top: 1.1rem;
+ right: 5px;
+ font-size: 20px;
+ color: #901f4d;
+}
+.hide {
+ display: none;
+}

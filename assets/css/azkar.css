@@ -1,0 +1,197 @@
+.azkar-list {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ gap: 1rem;
+}
+.azkar-list li {
+ font-weight: bold;
+ font-size: 1.3rem;
+ color: #ccc;
+ transition: 0.2s ease-in-out;
+ cursor: pointer;
+}
+.azkar-list li:hover,
+.azkar-list li.active {
+ color: rgb(210, 160, 28);
+ border-bottom: 1px solid rgb(210, 160, 28);
+}
+.azkar-container {
+ margin-top: 2rem;
+}
+.azkar-container .box {
+ width: 650px;
+ max-width: 100%;
+ position: relative;
+ margin: 1.5rem auto;
+ border-radius: 15px;
+ text-align: center;
+ padding: 3rem 1rem 1rem;
+ color: #fff;
+ border: 1px solid rgb(210, 160, 28);
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+ z-index: 1;
+}
+.azkar-container .box::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ z-index: -2;
+ border-radius: 15px;
+}
+.azkar-container.alsabah .box::before {
+ background-image: url(../img/overlay/over5.jpg);
+}
+.azkar-container.almasaa .box::before {
+ background-image: url(../img/overlay/over22.jpg);
+}
+.azkar-container.alsalah .box::before {
+ background-image: url(../img/overlay/over6.jpg);
+}
+.azkar-container.mokhtara .box::before {
+ background-image: url(../img/overlay/over2.jpg);
+}
+.azkar-container .box::after {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.9);
+ z-index: -1;
+ opacity: 0.7;
+ border-radius: 15px;
+}
+.azkar-container .box .box-content {
+ z-index: 100;
+ position: relative;
+}
+.azkar-container .box span.zekr-number {
+ position: absolute;
+ top: 0;
+ right: 0;
+ width: 40px;
+ height: 40px;
+ background-color: #901f4d;
+ border-top-right-radius: 15px;
+ border-bottom-left-radius: 15px;
+ color: #fff;
+ text-align: center;
+ line-height: 40px;
+}
+.azkar-container .box .zekr-text {
+ font-family: "El Messiri", sans-serif;
+ word-break: keep-all;
+ word-spacing: 2px;
+ font-size: 1.4rem;
+}
+.azkar-container .box .zekr-description {
+ font-family: "El Messiri", sans-serif;
+ margin-top: 1rem;
+ word-break: keep-all;
+ color: rgb(210, 160, 28);
+ word-spacing: 2px;
+ font-size: 1.1rem;
+}
+.azkar-container .box .zekr-count {
+ display: block;
+ margin: 0.5rem auto;
+ font-family: "Times New Roman", Times, serif;
+ width: 50px;
+ height: 50px;
+ text-align: center;
+ line-height: 50px;
+ border-radius: 50%;
+ border: 1px solid #901f4d;
+ font-weight: bold;
+ transition: 0.2s ease-in-out;
+}
+.azkar-container .box .zekr-count.active {
+ color: #901f4d;
+}
+.card-container {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 2rem;
+ flex-wrap: wrap;
+ text-align: center;
+}
+h1.card-heading {
+ text-align: center;
+ width: 100%;
+}
+h1.card-heading span {
+ color: rgb(210, 160, 28);
+ margin: 0 10px;
+}
+.card-container .card {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+.card-container .card .progress {
+ position: relative !important;
+ width: 200px;
+ height: 200px;
+ transform: rotate(-90deg);
+}
+.card-container .card svg {
+ position: absolute;
+ top: 50%;
+ left: 20%;
+ transform: translate(-8px, calc(-50% - 8px));
+}
+.card-container .card circle {
+ fill: transparent;
+ transform: translate(4px, 4px);
+ stroke-linecap: round;
+ stroke-width: 4;
+ stroke: rgb(210, 160, 28);
+}
+.card-container .card circle:nth-child(2) {
+ stroke-dasharray: 440;
+ stroke-dashoffset: calc(-440 + (440 * (100 - var(--num))) / 100);
+ stroke: #901f4d;
+}
+.card-container .card span {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%) rotate(90deg);
+ font-size: 35px;
+ font-weight: bold;
+}
+.card-container .card .zekr {
+ margin-top: -1rem;
+ font-size: 30px;
+ font-weight: bold;
+ color: rgb(210, 160, 28);
+}
+.azkar-btn {
+ display: block;
+ margin: 2rem auto;
+ width: fit-content;
+ background-color: rgb(210, 160, 28);
+ border: 1px solid rgb(210, 160, 28);
+ color: #fff;
+ border-radius: 25px;
+ padding: 10px 30px;
+ font-weight: bold;
+ font-size: 20px;
+ transition: 0.2s ease-in-out;
+ font-family: "El Messiri", sans-serif;
+}
+.azkar-btn:hover {
+ color: rgb(210, 160, 28);
+ background-color: #fff;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المصحف</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png" />
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/moshaf.css" />
+ </head>
+ <body>
+  <div class="overlay overlay1"></div>
+  <div class="preloader">
+   <lottie-player
+    src="https://assets1.lottiefiles.com/private_files/lf30_013r2q.json"
+    background="transparent"
+    speed="2.5"
+    autoplay
+   ></lottie-player>
+  </div>
+  <div class="container">
+   <div class="header">
+    <div class="logo">رمضانك</div>
+    <ul class="links">
+     <li>
+      <a href="index.html">الرئيسية</a>
+     </li>
+     <li>
+      <a href="azkar.html">أذكار</a>
+     </li>
+     <li class="active">
+      <a href="moshaf.html">المصحف</a>
+     </li>
+     <li>
+      <a href="allah_names.html">أسماء اللة</a>
+     </li>
+     <li>
+      <a href="calendar.html">التقويم الهجري</a>
+     </li>
+     <li>
+      <a href="gift.html">اهداء</a>
+     </li>
+    </ul>
+    <a href="#" class="nav-toggler"><i class="fa fa-bars"></i></a>
+   </div>
+  </div>
+  <section style="margin-top: 0">
+   <div class="container moshaf-container">
+    <div class="select-soura">
+     <h3 class="soura">
+      سورة <span>الناس</span> أياتها
+      <p>(6)</p>
+     </h3>
+     <select name="" id="select-soura-box" class="select-soura-box">
+      <option value="0">قم باختيار السورة</option>
+     </select>
+     <div
+      class="bookmark-btn"
+      onclick="goBookmark(this)"
+      title="الذهاب الي  علامة الترقيم"
+     >
+      <i class="fa fa-bookmark"></i>
+      <div class="bookmark-number"></div>
+     </div>
+    </div>
+    <div class="soura-text">
+     <div class="first">بسم الله الرحمن الرحيم</div>
+     <div class="soura-wrapper"></div>
+    </div>
+    <div class="next-soura">
+     <button>السورة التالية <i class="fa fa-angle-left"></i></button>
+    </div>
+   </div>
+  </section>
+  <script>
+   // preload
+   setTimeout(() => {
+    document.querySelector(".preloader").style.animation = "fadeOut 0.5s ease";
+   }, 2000);
+   setTimeout(() => {
+    document
+     .querySelector(".preloader")
+     .parentNode.removeChild(document.querySelector(".preloader"));
+   }, 2500);
+  </script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/moshaf.js"></script>
+ </body>
+</html>

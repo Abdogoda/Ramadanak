@@ -1,0 +1,318 @@
+@import url("main.css");
+.container.hero {
+ border-radius: 1rem;
+ height: calc(100vh - 8rem);
+ backdrop-filter: blur(7px);
+ box-shadow: 0 0px 32px rgba(0, 0, 0, 0.35);
+ overflow: hidden;
+}
+
+.container.hero .container-overlay {
+ position: absolute;
+ top: 100px;
+ left: 0;
+ width: 50%;
+ height: calc(100% - 100px);
+ background: url(../img/sticker/s14.png);
+ background-position: left center;
+ background-size: 100%;
+ background-repeat: no-repeat;
+ z-index: 9;
+}
+.container.hero .content {
+ position: relative;
+ height: calc(100% - 200px);
+ width: 50%;
+ max-width: 100%;
+ padding-right: 3rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ z-index: 10;
+}
+.container.hero .content h1 {
+ font-size: 4em;
+ margin-bottom: -2rem;
+}
+.container.hero .content p {
+ letter-spacing: 2px;
+ text-align: center;
+}
+/* quote-container */
+.quote-container .wrapper {
+ position: relative;
+ width: 750px;
+ max-width: 100%;
+ margin: auto;
+ border-radius: 15px;
+ background-image: url(../img/overlay/over2.jpg);
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+.quote-container .ayya-quote .wrapper {
+ background-image: url(../img/overlay/over5.jpg);
+}
+.quote-container .wrapper .all-quote {
+ border-radius: 15px;
+ padding: 1.8rem;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(44, 44, 44, 0.7);
+}
+.quote-container .wrapper .wrapper-head {
+ font-size: 40px;
+ font-weight: bold;
+ text-align: center;
+ color: rgb(210, 160, 28);
+}
+.quote-container .wrapper .content {
+ margin: 0 0 20px 0;
+}
+.quote-container .wrapper .quote-area {
+ display: flex;
+ justify-content: center;
+}
+.quote-container .wrapper .quote-area i {
+ font-size: 15px;
+}
+.quote-container .wrapper .quote-area i:last-child {
+ display: flex;
+ align-items: flex-end;
+}
+.quote-container .wrapper .quote-area .quote {
+ font-family: "El Messiri", sans-serif;
+ font-size: 1.5rem;
+ text-align: center;
+ word-break: keep-all;
+ word-spacing: 2px;
+}
+.quote-container .wrapper .soura {
+ margin-top: 10px;
+ display: flex;
+ align-items: center;
+ gap: 5px;
+ justify-content: flex-end;
+ color: #ccc;
+}
+.quote-container .wrapper .buttons {
+ margin-top: 20px;
+ border-top: 1px solid #cccccc3a;
+}
+.quote-container .wrapper .buttons .features {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-top: 20px;
+}
+.quote-container .wrapper .buttons .features ul {
+ display: flex;
+}
+.quote-container .wrapper .buttons .features ul li {
+ margin: 0 5px;
+ height: 47px;
+ width: 47px;
+ border: 2px solid #fff;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ cursor: pointer;
+ color: #ffff;
+ transition: 0.2s ease-in-out;
+}
+.quote-container .wrapper .buttons .features ul li:hover {
+ color: #901f4d;
+ background-color: #fff;
+ border-color: #901f4d;
+}
+.quote-container .wrapper .buttons .features ul li.sound-off {
+ color: #901f4d;
+ background-color: #fff;
+ border-color: #901f4d;
+}
+.quote-container .wrapper .buttons .features ul li.hide {
+ display: none;
+}
+.quote-container .wrapper .buttons .features button {
+ background-color: #901f4d;
+ padding: 13px 20px;
+ border-radius: 30px;
+ cursor: pointer;
+ color: #fff;
+ font-size: 16px;
+ transition: 0.2s ease-in-out;
+}
+.quote-container .wrapper .buttons .features button:hover {
+ color: #901f4d;
+ background-color: #ffff;
+}
+.allah-names-container .wrapper {
+ position: relative;
+ width: 750px;
+ max-width: 100%;
+ margin: auto;
+ border-radius: 15px;
+ border: 1px solid rgb(210, 160, 28);
+ padding: 20px;
+}
+.allah-names-container .head {
+ color: rgb(210, 160, 28);
+ text-align: center;
+}
+.allah-names-container .box {
+ margin-top: -20px;
+ margin-bottom: 20px;
+ display: flex;
+}
+.allah-names-container .box .name {
+ position: relative;
+ border: 2px solid rgb(210, 160, 28);
+ background-color: #fff;
+ width: 7rem;
+ height: 7rem;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ margin-left: 3rem;
+ mix-blend-mode: screen;
+ color: rgb(210, 160, 28);
+ font-weight: bold;
+ font-size: 30px;
+}
+.allah-names-container .box .name::before {
+ position: absolute;
+ content: "";
+ left: -35px;
+ top: 50%;
+ transform: translateY(-50%);
+ border-width: 15px;
+ border-style: solid;
+ border-color: transparent rgb(210, 160, 28) transparent transparent;
+}
+.allah-names-container .box .meaning {
+ width: calc(100% - 7rem);
+ margin-top: 35px;
+ word-spacing: 2px;
+ word-break: keep-all;
+ font-family: "El Messiri", sans-serif;
+}
+.azkar-con .wrapper {
+ width: 750px;
+ max-width: 100%;
+ gap: 3rem;
+ margin: auto;
+ display: flex;
+ align-items: center;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+.azkar-con .wrapper .box {
+ position: relative;
+ text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+.azkar-con .wrapper .box .number {
+ width: 8rem;
+ height: 8rem;
+ border-radius: 50%;
+ text-align: center;
+ line-height: 9rem;
+ font-size: 4rem;
+ font-weight: bold;
+ color: rgb(210, 160, 28);
+ border: 1px solid rgb(210, 160, 28);
+ cursor: pointer;
+ transition: 0.2s ease-in-out;
+ user-select: none;
+}
+.azkar-con .wrapper .box .number:hover {
+ background-color: rgb(210, 160, 28);
+ border-color: #fff;
+ color: #ffff;
+}
+.azkar-con .wrapper .box .zekr {
+ color: #fff;
+ margin-top: 10px;
+ font-size: 1.7rem;
+ font-weight: bold;
+}
+.azkar-con .reset {
+ width: fit-content;
+ margin: 1rem auto;
+ padding: 10px 20px;
+ border-radius: 30px;
+ background-color: #fff;
+ color: #901f4d;
+ border: 1px solid #fff;
+ font-family: "El Messiri", sans-serif;
+ cursor: pointer;
+ transition: 0.2s ease-in-out;
+}
+.azkar-con .reset:hover {
+ background-color: transparent;
+ color: #fff;
+}
+.video {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ width: 300px;
+ height: 300px;
+ transform: translate(-50%, -50%);
+}
+@media (max-width: 778px) {
+ .container.hero {
+  height: calc(100vh - 4rem);
+ }
+ .container.hero .container-overlay {
+  top: 50px;
+  width: 100%;
+  height: calc(100% - 300px);
+  background-position: center;
+  background-size: 70%;
+ }
+ .container.hero .content {
+  width: 100%;
+  margin-top: 9rem;
+  padding-right: 0;
+ }
+
+ .quote-container .wrapper .all-quote {
+  padding: 1rem;
+ }
+}
+@media (max-width: 500px) {
+ .container.hero {
+  height: calc(100vh - 2rem);
+ }
+ .container.hero .container-overlay {
+  top: 50px;
+  background-size: 85%;
+ }
+ .quote-container .wrapper .all-quote {
+  padding: 0.5rem;
+ }
+ .allah-names-container .box {
+  flex-direction: column;
+ }
+ .allah-names-container .box .name::before {
+  left: 50%;
+  top: 105%;
+  transform: translateY(0) translateX(-50%);
+  border-color: rgb(210, 160, 28) transparent transparent transparent !important;
+ }
+ .allah-names-container .box .meaning {
+  width: calc(100%);
+  margin-top: 15px;
+  margin-right: 15px;
+ }
+}

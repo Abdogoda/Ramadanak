@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الأذكار</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png" />
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/azkar.css" />
+ </head>
+ <body>
+  <div class="overlay overlay1"></div>
+  <div class="preloader">
+   <lottie-player
+    src="https://assets1.lottiefiles.com/private_files/lf30_013r2q.json"
+    background="transparent"
+    speed="2.5"
+    autoplay
+   ></lottie-player>
+  </div>
+  <div class="container">
+   <div class="header">
+    <div class="logo">رمضانك</div>
+    <ul class="links">
+     <li>
+      <a href="index.html">الرئيسية</a>
+     </li>
+     <li class="active">
+      <a href="azkar.html">أذكار</a>
+     </li>
+     <li>
+      <a href="moshaf.html">المصحف</a>
+     </li>
+     <li>
+      <a href="allah_names.html">أسماء اللة</a>
+     </li>
+     <li>
+      <a href="calendar.html">التقويم الهجري</a>
+     </li>
+     <li>
+      <a href="gift.html">اهداء</a>
+     </li>
+    </ul>
+    <a href="#" class="nav-toggler"><i class="fa fa-bars"></i></a>
+   </div>
+  </div>
+  <section style="margin-top: 1rem">
+   <div class="container">
+    <ul class="azkar-list">
+     <li
+      data-azkargategory="مختارة"
+      data-class="mokhtara"
+      class="active mokhtara"
+     >
+      أذكار مختارة
+     </li>
+     <li data-azkargategory="أذكار الصباح" data-class="alsabah">
+      أذكار الصباح
+     </li>
+     <li data-azkargategory="أذكار المساء" data-class="almasaa">
+      أذكار المساء
+     </li>
+     <li data-azkargategory="الأذكار بعد السلام من الصلاة" data-class="alsalah">
+      أذكار الصلاة
+     </li>
+     <li data-azkargategory="azkark" data-class="azkark">أذكارك</li>
+    </ul>
+    <div class="azkar-container"></div>
+   </div>
+  </section>
+  <script>
+   // preload
+   setTimeout(() => {
+    document.querySelector(".preloader").style.animation = "fadeOut 0.5s ease";
+   }, 2000);
+   setTimeout(() => {
+    document
+     .querySelector(".preloader")
+     .parentNode.removeChild(document.querySelector(".preloader"));
+   }, 2500);
+  </script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="assets/js/azkar.js"></script>
+ </body>
+</html>
