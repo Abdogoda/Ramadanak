@@ -23,7 +23,7 @@ document.querySelector(".overall button").addEventListener("click", () => {
  }, 3500);
  setTimeout(() => {
   getData();
- }, 2500);
+ }, 2000);
 });
 
 //start
