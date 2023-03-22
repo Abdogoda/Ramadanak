@@ -31,15 +31,11 @@
   </style>
  </head>
  <body>
-  <div class="overlay overlay1"></div>
-  <div class="preloader">
-   <lottie-player
-    src="https://assets1.lottiefiles.com/private_files/lf30_013r2q.json"
-    background="transparent"
-    speed="1.2"
-    autoplay
-   ></lottie-player>
+  <div class="over overall">
+   <button class="start" id="start">ابدا العرض</button>
   </div>
+  <div class="overlay overlay1"></div>
+
   <div class="over over2"><img src="assets/img/sticker/s7.png" alt="" /></div>
   <div class="over over3"><img src="assets/img/sticker/s7.png" alt="" /></div>
   <div class="container hero">
@@ -72,17 +68,6 @@
     </div>
    </div>
   </div>
-  <script>
-   // preload
-   setTimeout(() => {
-    document.querySelector(".preloader").style.animation = "fadeOut 0.5s ease";
-   }, 4000);
-   setTimeout(() => {
-    document
-     .querySelector(".preloader")
-     .parentNode.removeChild(document.querySelector(".preloader"));
-   }, 4500);
-  </script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="assets/js/viewGift.js"></script>
  </body>
