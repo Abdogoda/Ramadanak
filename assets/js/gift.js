@@ -30,7 +30,11 @@ form.addEventListener("submit", (e) => {
   name.setAttribute("placeholder", "من فضلك أدخل اسم المرسل اليه");
   document.getElementById("name").classList.add("error");
  } else {
-  window.location.href = ` viewGift.html?${name.value}-${song.value}`;
+  var message_text = message.value;
+  if(message.value == ""){
+   message_text = "رمضانك كريم";
+  }
+  window.location.href = ` viewGift.html?${name.value}-${message_text}-${song.value}`;
  }
 });
 // play the song
