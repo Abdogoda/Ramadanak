@@ -151,7 +151,7 @@
 }
 @media (max-width: 500px) {
  .container.hero {
-  height: calc(100vh - 2rem);
+  min-height: calc(100vh - 2rem);
  }
  .container.hero .content {
   padding: 0 1.5rem;
