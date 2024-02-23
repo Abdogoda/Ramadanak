@@ -136,7 +136,8 @@
 .calendar-box .calendar-special .speciality .text {
  background-color: rgb(210, 160, 28);
  color: #160f0f;
- width: 150px;
+ width: 300px;
+ max-width:100%;
  text-align: right;
  padding: 5px 10px;
  border-radius: 15px;
