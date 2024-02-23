@@ -1,9 +1,13 @@
 const queryString = window.location.search;
 const urlParams = queryString.slice(1).split("-");
 var name = urlParams[0];
-var song = urlParams[1];
+var message = urlParams[1];
+var song = urlParams[2];
 if (song == "") {
  song = "1";
+}
+if (message == "") {
+ message = "رمضانك كريم";
 }
 
 // start btn
@@ -35,12 +39,11 @@ function getData() {
    var audio = new Audio(fetchedData.src);
    audio.play();
    document.querySelector(".name").textContent = decodeURI(name);
+   document.querySelector(".message").textContent = decodeURI(message);
   });
  // share
  document.querySelector(".share").addEventListener("click", () => {
-  var uri = `${window.location.origin}${window.location.pathname}?${encodeURI(
-   name
-  )}-${song}`;
+  var uri = `${window.location.origin}${window.location.pathname}?${encodeURI(name)}-${encodeURI(message)}-${song}`;
   let url = `https://wa.me/?text=${uri}`;
   window.open(url, "_blank");
  });
