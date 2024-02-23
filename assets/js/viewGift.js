@@ -39,7 +39,7 @@ function getData() {
    var audio = new Audio(fetchedData.src);
    audio.play();
    document.querySelector(".name").textContent = decodeURI(name);
-   document.querySelector(".message").textContent = decodeURI(message);
+   document.querySelector(".default-message").textContent = decodeURI(message);
   });
  // share
  document.querySelector(".share").addEventListener("click", () => {
